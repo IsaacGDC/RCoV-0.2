@@ -1,0 +1,240 @@
+/*
+Theme Name: Twenty Twenty-Two Child
+Theme URI: https://wordpress.org/themes/twentytwentytwo/
+Template: twentytwentytwo
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Built on a solidly designed foundation, Twenty Twenty-Two embraces the idea that everyone deserves a truly unique website. The theme’s subtle styles are inspired by the diversity and versatility of birds: its typography is lightweight yet strong, its color palette is drawn from nature, and its layout elements sit gently on the page. The true richness of Twenty Twenty-Two lies in its opportunity for customization. The theme is built to take advantage of the Full Site Editing features introduced in WordPress 5.9, which means that colors, typography, and the layout of every single page on your site can be customized to suit your vision. It also includes dozens of block patterns, opening the door to a wide range of professionally designed layouts in just a few clicks. Whether you’re building a single-page website, a blog, a business website, or a portfolio, Twenty Twenty-Two will help you create a site that is uniquely yours.
+Tags: one-column,custom-colors,custom-menu,custom-logo,editor-style,featured-images,full-site-editing,block-patterns,rtl-language-support,sticky-post,threaded-comments
+Version: 1.2.1653992334
+Updated: 2022-05-31 10:18:54
+
+*/
+
+/* SITE SETTINGS */
+.wp-site-blocks {
+  margin-top: 0;
+}
+
+div[class^="wp-container-"], 
+.wp-site-blocks > * + * {
+  margin-block-start: 0;
+}
+
+.gdc-page-content {
+  margin: 0;
+}
+
+.gdc-reset-block-margin { 
+  margin: 0 !important;
+}
+ 
+.gdc-block--600 {
+  width: 600px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.gdc-mt-20 {
+  margin-top: 40px !important;
+}
+
+
+@media (max-width: 768px) {
+  .gdc-hide-on-mobile {
+    display: none !important;
+  }
+
+  .gdc-hide-on-desktop {
+    display: block !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .gdc-hide-on-desktop {
+    display: none !important;
+  }
+  .gdc-hide-on-mobile {
+    display: block !important;
+  }
+}
+
+/* HEADER */
+
+.gdc-header-main__logo {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .gdc-header-main__logo {
+    transform: translateY(0px);
+  }
+}
+
+/* LANDING HERO */
+
+.gdc-hero__landing-subtitle h2 {
+  padding: 10px 20px;
+}
+
+
+@media (max-width: 768px) {
+  .gdc-landing-super-heading--subtitle {
+    font-size: 30px !important;
+  }
+  
+  .gdc-landing-super-heading--title {
+    font-size: 90px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .gdc-landing-super-heading--subtitle {
+    font-size: 20px !important;
+  }
+  
+  .gdc-landing-super-heading--title {
+    font-size: 40px !important;
+  }
+}
+
+.gdc-footer-main__logo {
+  position: relative;
+  transform: translateY(-100px);
+  z-index: 2;
+}
+
+.gdc-media-text--curved .wp-block-media-text__content {
+  height: 100%;
+}
+
+.gdc-media-text--curved img {
+  border-radius: 0 30px 0 150px;
+}
+
+.gdc-media-text--curved figure {
+  border-right: 1px solid rgb(196, 196, 196);
+  border-top-right-radius: 30px;
+}
+
+.gdc-media-text--curved img {
+  border-radius: 0 30px 0 150px;
+  margin-bottom: 100px;
+}
+
+.gdc-media-text--curved .gdc-animation-parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+}
+
+/* GALLERY [STICKY TEXT] */
+
+.gdc-gallery-sticky-text {
+  position: relative;
+  padding: 0 !important;
+}
+
+/* .gdc-slider-dots__wrapper {} */
+
+.gdc-slider-dots {
+  position: sticky;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  padding: 50vh 20px;
+  float: left;
+}
+
+.gdc-slider-dots.gdc-slider-dots--right {
+  align-items: flex-end;
+  float: right;
+}
+
+.gdc-slider-dot {
+  height: 10px;
+  width: 10px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+.gdc-slider-dot--active {
+  background-color: black;
+}
+
+.gdc-gallery-sticky-text__text-column.gdc-gallery-sticky-text--text-left {
+  padding-left: 4vw;
+}
+
+/* .gdc-gallery-sticky-text__columns {} */
+
+/* .gdc-gallery-sticky-text__text-column {} */
+
+.gdc-gallery-sticky-text__image-column {
+  padding-top: 40px;
+}
+
+.gdc-gallery-sticky-text__text-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+  position: sticky;
+  top: 0;
+}
+
+.gdc-gallery-sticky-text__text-group .wp-block-buttons {
+  margin-top: 20px;
+}
+
+.gdc-marquee-container *  {
+  font-size: 10vw;
+  font-weight: bold;
+  letter-spacing: 1vw;
+  color: white;  
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.gdc-marquee-container {
+  width: 100vw;
+  transform: translateX(-5vw);
+  position: relative;
+  height: 12vw;
+  overflow: hidden;
+}
+
+.gdc-marquee {
+  display: flex;
+  justify-content: center; 
+  top: 0;
+  left: 100%;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+.gdc-marquee2 {
+  animation-delay: 15s;  
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%
+  }
+}
+
+@media (max-width: 500px) {
+  .gdc-marquee {
+    animation: marquee 10s linear infinite;
+  }
+
+  .gdc-marquee2 {
+    animation-delay: 5s;
+  }
+}
